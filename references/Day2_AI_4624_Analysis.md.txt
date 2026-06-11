@@ -1,6 +1,5 @@
 # Day 2: AI Analysis of Windows Event 4624
 
-## ChatGPT Response
 
 ### Is this a normal or suspicious login?
 
