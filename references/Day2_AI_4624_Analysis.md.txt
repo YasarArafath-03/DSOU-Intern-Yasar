@@ -1,0 +1,51 @@
+# Day 2: AI Analysis of Windows Event 4624
+
+## ChatGPT Response
+
+### Is this a normal or suspicious login?
+
+Based on Event ID 4624, this appears to be a successful Windows logon. By itself, Event ID 4624 is usually considered normal because it records successful authentication activity. Whether it is suspicious depends on context such as the user account, source IP address, workstation, logon time, and logon type.
+
+### Fields Reviewed
+
+* SubjectUserName
+* TargetUserName
+* LogonType
+* WorkstationName
+* IpAddress
+* ProcessId
+
+### Logon Type Analysis
+
+The LogonType field identifies how the user authenticated. Common examples include:
+
+* 2 = Interactive logon (local keyboard login)
+* 3 = Network logon
+* 5 = Service logon
+* 7 = Unlock workstation
+* 10 = Remote Desktop (RDP)
+
+Interactive logons and workstation unlocks are commonly observed in normal user activity.
+
+### Investigation Assessment
+
+No immediate indicators of malicious activity are present based solely on Event ID 4624. Additional investigation would be recommended if:
+
+* The login occurred at an unusual time.
+* The source IP address is unexpected.
+* The account is privileged.
+* Multiple failed logins occurred before the successful login.
+* The login originated from a new device or location.
+
+## My Additional Notes
+
+* Date of analysis: 12-Jun-2026
+* Event source: Windows Security Log
+* Logon type observed: [Enter your LogonType value]
+* Do I agree with the AI assessment? Yes. Event ID 4624 is generally expected for successful user authentication.
+
+## Follow-up Questions
+
+* Were any failed logins recorded before this event?
+* Was the login performed from an expected workstation?
+* Does the source IP address match the normal user location?
