@@ -1,0 +1,35 @@
+Test log used:
+
+Mar 10 14:32:15 kali sshd[12345]: Failed password for root from 192.168.1.100 port 22 ssh2
+
+Sample wazuh-logtest Output
+
+**Phase 1: Completed pre-decoding.
+
+full event: 'Mar 10 14:32:15 kali sshd[12345]: Failed password for root from 192.168.1.100 port 22 ssh2'
+
+timestamp: 'Mar 10 14:32:15'
+
+hostname: 'kali'
+
+program_name: 'sshd'
+
+**Phase 2: Completed decoding.
+
+decoder: 'sshd'
+
+srcip: '192.168.1.100'
+
+dstuser: 'root'
+
+**Phase 3: Completed filtering (rules).
+
+id: '5710'
+
+level: '5'
+
+description: 'SSHD authentication failed.'
+
+**Alert generated.
+
+This is a sample decoder output used for learning purposes.
