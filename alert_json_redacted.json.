@@ -1,0 +1,12 @@
+{
+"rule": {
+"id": "5715",
+"description": "Windows login failed attempt"
+},
+"agent": {
+"name": "[REDACTED_HOST]"
+},
+"location": "Security",
+"srcip": "[REDACTED_IP]",
+"user": "[REDACTED_USER]"
+}
