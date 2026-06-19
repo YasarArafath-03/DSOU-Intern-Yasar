@@ -1,0 +1,2 @@
+Sigma CLI conversion not performed because installation task was skipped.
+
